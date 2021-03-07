@@ -3,27 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5171CBB225F5753500E090CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CBB125F5753500E090CD /* AppDelegate.swift */; };
-		5171CBB425F5753500E090CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CBB325F5753500E090CD /* SceneDelegate.swift */; };
-		5171CBB625F5753500E090CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CBB525F5753500E090CD /* ViewController.swift */; };
-		5171CBB925F5753500E090CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5171CBB725F5753500E090CD /* Main.storyboard */; };
+		5171CBB625F5753500E090CD /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CBB525F5753500E090CD /* CollectionViewController.swift */; };
 		5171CBBB25F5753800E090CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5171CBBA25F5753800E090CD /* Assets.xcassets */; };
 		5171CBBE25F5753800E090CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5171CBBC25F5753800E090CD /* LaunchScreen.storyboard */; };
+		5171CBD125F5789900E090CD /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CBD025F5789900E090CD /* BaseView.swift */; };
+		5171CBF125F57C5300E090CD /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CBF025F57C5300E090CD /* Network.swift */; };
+		5171CBF625F57D1D00E090CD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CBF425F57D1D00E090CD /* Colors.swift */; };
+		5171CBF725F57D1D00E090CD /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CBF525F57D1D00E090CD /* Macros.swift */; };
+		5171CBFB25F57E4400E090CD /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CBFA25F57E4400E090CD /* CollectionView.swift */; };
+		5171CBFE25F57E5A00E090CD /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CBFD25F57E5A00E090CD /* CollectionViewModel.swift */; };
+		5171CC0225F57F3600E090CD /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CC0125F57F3600E090CD /* CollectionViewCell.swift */; };
+		5171CC0825F5819200E090CD /* ERCAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CC0725F5819200E090CD /* ERCAPI.swift */; };
+		5171CC0B25F5820900E090CD /* ERCAPI+Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CC0A25F5820900E090CD /* ERCAPI+Parameter.swift */; };
+		5171CC0E25F586DD00E090CD /* GetAssetsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CC0D25F586DD00E090CD /* GetAssetsResponse.swift */; };
+		5171CC1125F58D7500E090CD /* Assetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CC1025F58D7500E090CD /* Assetable.swift */; };
+		9642F9C8D1AACEEF780E79F7 /* Pods_ERCCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA102B5B896CC62F49263C2 /* Pods_ERCCollection.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5171CBAE25F5753500E090CD /* ERCCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ERCCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5171CBB125F5753500E090CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5171CBB325F5753500E090CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5171CBB525F5753500E090CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5171CBB825F5753500E090CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5171CBB525F5753500E090CD /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		5171CBBA25F5753800E090CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5171CBBD25F5753800E090CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5171CBBF25F5753800E090CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5171CBD025F5789900E090CD /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		5171CBF025F57C5300E090CD /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		5171CBF425F57D1D00E090CD /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		5171CBF525F57D1D00E090CD /* Macros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
+		5171CBFA25F57E4400E090CD /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		5171CBFD25F57E5A00E090CD /* CollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
+		5171CC0125F57F3600E090CD /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		5171CC0725F5819200E090CD /* ERCAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCAPI.swift; sourceTree = "<group>"; };
+		5171CC0A25F5820900E090CD /* ERCAPI+Parameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ERCAPI+Parameter.swift"; sourceTree = "<group>"; };
+		5171CC0D25F586DD00E090CD /* GetAssetsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAssetsResponse.swift; sourceTree = "<group>"; };
+		5171CC1025F58D7500E090CD /* Assetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assetable.swift; sourceTree = "<group>"; };
+		8FA102B5B896CC62F49263C2 /* Pods_ERCCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ERCCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		913E12B106A9DFF0082BF3AA /* Pods-ERCCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERCCollection.debug.xcconfig"; path = "Target Support Files/Pods-ERCCollection/Pods-ERCCollection.debug.xcconfig"; sourceTree = "<group>"; };
+		DAB63CE823539E708296151A /* Pods-ERCCollection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERCCollection.release.xcconfig"; path = "Target Support Files/Pods-ERCCollection/Pods-ERCCollection.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9642F9C8D1AACEEF780E79F7 /* Pods_ERCCollection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +65,8 @@
 			children = (
 				5171CBB025F5753500E090CD /* ERCCollection */,
 				5171CBAF25F5753500E090CD /* Products */,
+				6C3CC2AF0AEA7A00D97D2002 /* Pods */,
+				7BA291DA3512B1659DE25674 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +81,145 @@
 		5171CBB025F5753500E090CD /* ERCCollection */ = {
 			isa = PBXGroup;
 			children = (
+				5171CBF325F57D1D00E090CD /* Definition */,
+				5171CBEC25F57B7800E090CD /* Network */,
+				5171CBCF25F5789900E090CD /* Common */,
+				5171CBC925F5775A00E090CD /* DetailPage */,
+				5171CBC825F5774100E090CD /* CollectionPage */,
 				5171CBB125F5753500E090CD /* AppDelegate.swift */,
-				5171CBB325F5753500E090CD /* SceneDelegate.swift */,
-				5171CBB525F5753500E090CD /* ViewController.swift */,
-				5171CBB725F5753500E090CD /* Main.storyboard */,
 				5171CBBA25F5753800E090CD /* Assets.xcassets */,
 				5171CBBC25F5753800E090CD /* LaunchScreen.storyboard */,
 				5171CBBF25F5753800E090CD /* Info.plist */,
 			);
 			path = ERCCollection;
+			sourceTree = "<group>";
+		};
+		5171CBC825F5774100E090CD /* CollectionPage */ = {
+			isa = PBXGroup;
+			children = (
+				5171CBCE25F577B900E090CD /* View */,
+				5171CBCD25F577B200E090CD /* Model */,
+				5171CBCC25F577AC00E090CD /* ViewModel */,
+				5171CBCB25F5778700E090CD /* ViewController */,
+			);
+			path = CollectionPage;
+			sourceTree = "<group>";
+		};
+		5171CBC925F5775A00E090CD /* DetailPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailPage;
+			sourceTree = "<group>";
+		};
+		5171CBCB25F5778700E090CD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5171CBB525F5753500E090CD /* CollectionViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5171CBCC25F577AC00E090CD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5171CBFD25F57E5A00E090CD /* CollectionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5171CBCD25F577B200E090CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5171CBCE25F577B900E090CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5171CC0025F57F2000E090CD /* component */,
+				5171CBFA25F57E4400E090CD /* CollectionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5171CBCF25F5789900E090CD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5171CBD025F5789900E090CD /* BaseView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5171CBEC25F57B7800E090CD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5171CC0525F5815000E090CD /* API */,
+				5171CBEF25F57C3700E090CD /* Model */,
+				5171CBEE25F57C1B00E090CD /* NetworkProtocol */,
+				5171CBF025F57C5300E090CD /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5171CBEE25F57C1B00E090CD /* NetworkProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				5171CC1025F58D7500E090CD /* Assetable.swift */,
+			);
+			path = NetworkProtocol;
+			sourceTree = "<group>";
+		};
+		5171CBEF25F57C3700E090CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5171CC0D25F586DD00E090CD /* GetAssetsResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5171CBF325F57D1D00E090CD /* Definition */ = {
+			isa = PBXGroup;
+			children = (
+				5171CBF425F57D1D00E090CD /* Colors.swift */,
+				5171CBF525F57D1D00E090CD /* Macros.swift */,
+			);
+			path = Definition;
+			sourceTree = "<group>";
+		};
+		5171CC0025F57F2000E090CD /* component */ = {
+			isa = PBXGroup;
+			children = (
+				5171CC0125F57F3600E090CD /* CollectionViewCell.swift */,
+			);
+			path = component;
+			sourceTree = "<group>";
+		};
+		5171CC0525F5815000E090CD /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5171CC0725F5819200E090CD /* ERCAPI.swift */,
+				5171CC0A25F5820900E090CD /* ERCAPI+Parameter.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		6C3CC2AF0AEA7A00D97D2002 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				913E12B106A9DFF0082BF3AA /* Pods-ERCCollection.debug.xcconfig */,
+				DAB63CE823539E708296151A /* Pods-ERCCollection.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7BA291DA3512B1659DE25674 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FA102B5B896CC62F49263C2 /* Pods_ERCCollection.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5171CBC225F5753800E090CD /* Build configuration list for PBXNativeTarget "ERCCollection" */;
 			buildPhases = (
+				1E068B66B264EF83C4E5A5EF /* [CP] Check Pods Manifest.lock */,
 				5171CBAA25F5753500E090CD /* Sources */,
 				5171CBAB25F5753500E090CD /* Frameworks */,
 				5171CBAC25F5753500E090CD /* Resources */,
+				5B0855EF1A0F743B23789DAA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,34 +283,77 @@
 			files = (
 				5171CBBE25F5753800E090CD /* LaunchScreen.storyboard in Resources */,
 				5171CBBB25F5753800E090CD /* Assets.xcassets in Resources */,
-				5171CBB925F5753500E090CD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E068B66B264EF83C4E5A5EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ERCCollection-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B0855EF1A0F743B23789DAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ERCCollection/Pods-ERCCollection-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ERCCollection/Pods-ERCCollection-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ERCCollection/Pods-ERCCollection-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5171CBAA25F5753500E090CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5171CBB625F5753500E090CD /* ViewController.swift in Sources */,
+				5171CC0E25F586DD00E090CD /* GetAssetsResponse.swift in Sources */,
+				5171CBF725F57D1D00E090CD /* Macros.swift in Sources */,
+				5171CBD125F5789900E090CD /* BaseView.swift in Sources */,
+				5171CC0225F57F3600E090CD /* CollectionViewCell.swift in Sources */,
+				5171CBFB25F57E4400E090CD /* CollectionView.swift in Sources */,
+				5171CBF625F57D1D00E090CD /* Colors.swift in Sources */,
+				5171CBFE25F57E5A00E090CD /* CollectionViewModel.swift in Sources */,
+				5171CC1125F58D7500E090CD /* Assetable.swift in Sources */,
+				5171CBB625F5753500E090CD /* CollectionViewController.swift in Sources */,
+				5171CC0825F5819200E090CD /* ERCAPI.swift in Sources */,
+				5171CC0B25F5820900E090CD /* ERCAPI+Parameter.swift in Sources */,
+				5171CBF125F57C5300E090CD /* Network.swift in Sources */,
 				5171CBB225F5753500E090CD /* AppDelegate.swift in Sources */,
-				5171CBB425F5753500E090CD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5171CBB725F5753500E090CD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5171CBB825F5753500E090CD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5171CBBC25F5753800E090CD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +416,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +471,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,6 +483,7 @@
 		};
 		5171CBC325F5753800E090CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 913E12B106A9DFF0082BF3AA /* Pods-ERCCollection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +503,7 @@
 		};
 		5171CBC425F5753800E090CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAB63CE823539E708296151A /* Pods-ERCCollection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
