@@ -8,19 +8,6 @@
 import Moya
 import RxSwift
 
-public enum ERCResponseResult<Value, Failure> {
-    case success(Value)
-    case failure(Failure)
-    
-    init(value: Value){
-        self = .success(value)
-    }
-    
-    init(error: Failure){
-        self = .failure(error)
-    }
-}
-
 public enum ParseResponseError: Error{
     case respnseError(errCode: String, errMsg: String, data: Data? = nil)
     case parseError
@@ -49,35 +36,53 @@ public enum ParseResponseError: Error{
     }
 }
 
-let provider = MoyaProvider<ERCAPI>()
 
 let rxRequest = RxRequest.shared
 public class RxRequest: NSObject {
-    static let shared = RxRequest()
     
-    func request<T: Decodable>(target: ERCAPI) -> Observable<ERCResponseResult<T,ParseResponseError>> {
-        return Observable.create({ observer -> Disposable in
-            provider.request(target) { responseResult in
+    static let shared = RxRequest()
+    var provider: MoyaProvider<ERCAPI>!
+    var _loadingPlugin: [PluginType]!
+    
+    override init() {
+        super.init()
+        _loadingPlugin = [loadingPluging]
+        provider = MoyaProvider<ERCAPI>(plugins: _loadingPlugin)
+    }
+    
+    
+    lazy var loadingPluging = NetworkActivityPlugin{ (type, target) in
+        switch type{
+        case .began:
+            k_RefreshView.toggle(isOn: true)
+        case .ended:
+            k_RefreshView.toggle(isOn: false)
+        }
+    }
+    
+    func request<T: Decodable>(target: ERCAPI) -> Single<Result<T,ParseResponseError>> {
+        return Single.create{ [unowned self] single in
+            self.provider.request(target) { responseResult in
                 switch responseResult{
                 case let .success(response):
                     if response.statusCode == 200 {
                         do {
                             let tempObj = try JSONDecoder().decode(T.self, from: response.data)
-                            observer.onNext(.success(tempObj))
+                            single(.success(.success(tempObj)))
                         } catch (let error) {
                             let _error = ParseResponseError.respnseError(errCode: "", errMsg: error.localizedDescription)
-                            observer.onNext(.failure(_error))
+                            single(.error(_error))
                         }
                     } else {
-                        observer.onNext(.failure(.others))
+                        let _error = ParseResponseError.others
+                        single(.error(_error))
                     }
                 case let .failure(error):
                     let _error = ParseResponseError.respnseError(errCode: "", errMsg: error.localizedDescription)
-                    observer.onNext(.failure(_error))
+                    single(.error(_error))
                 }
-                observer.onCompleted()
             }
             return Disposables.create()
-        })
+        }
     }
 }

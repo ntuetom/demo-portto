@@ -8,11 +8,11 @@
 import RxSwift
 
 protocol Assetable: NSObjectProtocol {
-    func getAssets() -> Observable<ERCResponseResult<GetAssetsResponse,ParseResponseError>>
+    func getAssets() -> Single<Result<GetAssetsResponse,ParseResponseError>>
 }
 
 extension Assetable {
-    func getAssets() -> Observable<ERCResponseResult<GetAssetsResponse,ParseResponseError>> {
+    func getAssets() -> Single<Result<GetAssetsResponse,ParseResponseError>> {
         return rxRequest.request(target: .fetchAssets)
     }
 }

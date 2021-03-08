@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185E5CC325F5DF7F00D0A9AC /* ColletionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E5CC225F5DF7F00D0A9AC /* ColletionData.swift */; };
+		185E5CC625F5FFE100D0A9AC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E5CC525F5FFE100D0A9AC /* BaseViewController.swift */; };
+		185E5CD725F6165000D0A9AC /* RefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E5CD625F6165000D0A9AC /* RefreshView.swift */; };
 		5171CBB225F5753500E090CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CBB125F5753500E090CD /* AppDelegate.swift */; };
 		5171CBB625F5753500E090CD /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CBB525F5753500E090CD /* CollectionViewController.swift */; };
 		5171CBBB25F5753800E090CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5171CBBA25F5753800E090CD /* Assets.xcassets */; };
@@ -26,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		185E5CC225F5DF7F00D0A9AC /* ColletionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColletionData.swift; sourceTree = "<group>"; };
+		185E5CC525F5FFE100D0A9AC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		185E5CD625F6165000D0A9AC /* RefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshView.swift; sourceTree = "<group>"; };
 		5171CBAE25F5753500E090CD /* ERCCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ERCCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5171CBB125F5753500E090CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5171CBB525F5753500E090CD /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +66,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185E5CBB25F5B78F00D0A9AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		185E5CBC25F5B79800D0A9AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		185E5CBD25F5B7D100D0A9AC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		185E5CC125F5DF6D00D0A9AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				185E5CC225F5DF7F00D0A9AC /* ColletionData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185E5CD525F6163000D0A9AC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				185E5CD625F6165000D0A9AC /* RefreshView.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		5171CBA525F5753400E090CD = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +124,7 @@
 		5171CBB025F5753500E090CD /* ERCCollection */ = {
 			isa = PBXGroup;
 			children = (
+				185E5CD525F6163000D0A9AC /* Utility */,
 				5171CBF325F57D1D00E090CD /* Definition */,
 				5171CBEC25F57B7800E090CD /* Network */,
 				5171CBCF25F5789900E090CD /* Common */,
@@ -97,8 +141,8 @@
 		5171CBC825F5774100E090CD /* CollectionPage */ = {
 			isa = PBXGroup;
 			children = (
+				185E5CC125F5DF6D00D0A9AC /* Model */,
 				5171CBCE25F577B900E090CD /* View */,
-				5171CBCD25F577B200E090CD /* Model */,
 				5171CBCC25F577AC00E090CD /* ViewModel */,
 				5171CBCB25F5778700E090CD /* ViewController */,
 			);
@@ -108,6 +152,9 @@
 		5171CBC925F5775A00E090CD /* DetailPage */ = {
 			isa = PBXGroup;
 			children = (
+				185E5CBD25F5B7D100D0A9AC /* ViewController */,
+				185E5CBC25F5B79800D0A9AC /* View */,
+				185E5CBB25F5B78F00D0A9AC /* ViewModel */,
 			);
 			path = DetailPage;
 			sourceTree = "<group>";
@@ -128,13 +175,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		5171CBCD25F577B200E090CD /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		5171CBCE25F577B900E090CD /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				5171CBD025F5789900E090CD /* BaseView.swift */,
+				185E5CC525F5FFE100D0A9AC /* BaseViewController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -340,10 +381,13 @@
 				5171CBD125F5789900E090CD /* BaseView.swift in Sources */,
 				5171CC0225F57F3600E090CD /* CollectionViewCell.swift in Sources */,
 				5171CBFB25F57E4400E090CD /* CollectionView.swift in Sources */,
+				185E5CC625F5FFE100D0A9AC /* BaseViewController.swift in Sources */,
+				185E5CD725F6165000D0A9AC /* RefreshView.swift in Sources */,
 				5171CBF625F57D1D00E090CD /* Colors.swift in Sources */,
 				5171CBFE25F57E5A00E090CD /* CollectionViewModel.swift in Sources */,
 				5171CC1125F58D7500E090CD /* Assetable.swift in Sources */,
 				5171CBB625F5753500E090CD /* CollectionViewController.swift in Sources */,
+				185E5CC325F5DF7F00D0A9AC /* ColletionData.swift in Sources */,
 				5171CC0825F5819200E090CD /* ERCAPI.swift in Sources */,
 				5171CC0B25F5820900E090CD /* ERCAPI+Parameter.swift in Sources */,
 				5171CBF125F57C5300E090CD /* Network.swift in Sources */,

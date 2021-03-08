@@ -11,5 +11,6 @@ target 'ERCCollection' do
 	pod 'RxCocoa'
 	pod 'RxSwift'
 	pod 'RxDataSources'
+	pod 'Kingfisher'
 end
 
