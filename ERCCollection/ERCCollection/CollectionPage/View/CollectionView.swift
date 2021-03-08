@@ -37,10 +37,9 @@ class CollectionView: BaseView<CollectionViewModel> {
     override func makeSubviewConstraints() {
         super.makeSubviewConstraints()
         collectionView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-//            make.top.bottom.equalToSuperview()
-//            make.leading.equalToSuperview().offset(kOffset)
-//            make.centerX.equalToSuperview()
+            make.top.bottom.equalToSuperview()
+            make.leading.equalToSuperview().offset(kOffset).priority(750)
+            make.centerX.equalToSuperview()
         }
     }
     

@@ -15,7 +15,10 @@ class CollectionViewCell: UICollectionViewCell {
     }()
     
     lazy var nameLabel: UILabel = {
-        return UILabel()
+        let lb = UILabel()
+        lb.textAlignment = .center
+        lb.numberOfLines = 0
+        return lb
     }()
     
     override init(frame: CGRect) {
@@ -37,6 +40,8 @@ class CollectionViewCell: UICollectionViewCell {
     }
     
     func setupView() {
+        layer.borderColor = UIColor.gray.cgColor
+        layer.borderWidth = 1
         contentView.addSubview(imageView)
         contentView.addSubview(nameLabel)
     }
@@ -47,6 +52,7 @@ class CollectionViewCell: UICollectionViewCell {
             make.height.equalToSuperview().multipliedBy(0.6)
         }
         nameLabel.snp.makeConstraints { make in
+            make.leading.equalToSuperview().offset(kOffset)
             make.centerX.bottom.equalToSuperview()
             make.top.equalTo(imageView.snp.bottom).offset(kOffset)
         }

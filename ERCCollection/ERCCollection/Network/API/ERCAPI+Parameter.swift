@@ -9,9 +9,17 @@ import Moya
 
 extension ERCAPI: TargetType {
     public var baseURL: URL {
+        var path = rxRequest.domain
         switch self {
-        case .fetchAssets:
-            return URL(string: "https://api.opensea.io")!
+        case .fetchAssets(let req):
+            do{
+                let string = try req.asDictionary().queryString
+                path += string
+                
+            } catch (let error) {
+                print(error.localizedDescription)
+            }
+            return URL(string: path)!
         }
     }
     

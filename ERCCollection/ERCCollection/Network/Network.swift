@@ -43,6 +43,7 @@ public class RxRequest: NSObject {
     static let shared = RxRequest()
     var provider: MoyaProvider<ERCAPI>!
     var _loadingPlugin: [PluginType]!
+    var domain: String = "https://api.opensea.io"
     
     override init() {
         super.init()

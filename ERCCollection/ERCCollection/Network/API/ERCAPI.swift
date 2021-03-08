@@ -8,5 +8,5 @@
 import Moya
 
 enum ERCAPI {
-    case fetchAssets
+    case fetchAssets(req: GetAssetsRequest)
 }

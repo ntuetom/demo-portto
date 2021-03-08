@@ -23,8 +23,9 @@
 		5171CC0225F57F3600E090CD /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CC0125F57F3600E090CD /* CollectionViewCell.swift */; };
 		5171CC0825F5819200E090CD /* ERCAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CC0725F5819200E090CD /* ERCAPI.swift */; };
 		5171CC0B25F5820900E090CD /* ERCAPI+Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CC0A25F5820900E090CD /* ERCAPI+Parameter.swift */; };
-		5171CC0E25F586DD00E090CD /* GetAssetsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CC0D25F586DD00E090CD /* GetAssetsResponse.swift */; };
+		5171CC0E25F586DD00E090CD /* GetAssetsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CC0D25F586DD00E090CD /* GetAssetsModel.swift */; };
 		5171CC1125F58D7500E090CD /* Assetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CC1025F58D7500E090CD /* Assetable.swift */; };
+		5171CC3025F65BF200E090CD /* APIQuery+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CC2F25F65BF200E090CD /* APIQuery+Ext.swift */; };
 		9642F9C8D1AACEEF780E79F7 /* Pods_ERCCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA102B5B896CC62F49263C2 /* Pods_ERCCollection.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,8 +48,9 @@
 		5171CC0125F57F3600E090CD /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		5171CC0725F5819200E090CD /* ERCAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCAPI.swift; sourceTree = "<group>"; };
 		5171CC0A25F5820900E090CD /* ERCAPI+Parameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ERCAPI+Parameter.swift"; sourceTree = "<group>"; };
-		5171CC0D25F586DD00E090CD /* GetAssetsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAssetsResponse.swift; sourceTree = "<group>"; };
+		5171CC0D25F586DD00E090CD /* GetAssetsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAssetsModel.swift; sourceTree = "<group>"; };
 		5171CC1025F58D7500E090CD /* Assetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assetable.swift; sourceTree = "<group>"; };
+		5171CC2F25F65BF200E090CD /* APIQuery+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIQuery+Ext.swift"; sourceTree = "<group>"; };
 		8FA102B5B896CC62F49263C2 /* Pods_ERCCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ERCCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		913E12B106A9DFF0082BF3AA /* Pods-ERCCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERCCollection.debug.xcconfig"; path = "Target Support Files/Pods-ERCCollection/Pods-ERCCollection.debug.xcconfig"; sourceTree = "<group>"; };
 		DAB63CE823539E708296151A /* Pods-ERCCollection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERCCollection.release.xcconfig"; path = "Target Support Files/Pods-ERCCollection/Pods-ERCCollection.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		5171CBB025F5753500E090CD /* ERCCollection */ = {
 			isa = PBXGroup;
 			children = (
+				5171CC2E25F65BCD00E090CD /* Extension */,
 				185E5CD525F6163000D0A9AC /* Utility */,
 				5171CBF325F57D1D00E090CD /* Definition */,
 				5171CBEC25F57B7800E090CD /* Network */,
@@ -215,7 +218,7 @@
 		5171CBEF25F57C3700E090CD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5171CC0D25F586DD00E090CD /* GetAssetsResponse.swift */,
+				5171CC0D25F586DD00E090CD /* GetAssetsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -244,6 +247,14 @@
 				5171CC0A25F5820900E090CD /* ERCAPI+Parameter.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		5171CC2E25F65BCD00E090CD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5171CC2F25F65BF200E090CD /* APIQuery+Ext.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		6C3CC2AF0AEA7A00D97D2002 /* Pods */ = {
@@ -376,7 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5171CC0E25F586DD00E090CD /* GetAssetsResponse.swift in Sources */,
+				5171CC0E25F586DD00E090CD /* GetAssetsModel.swift in Sources */,
 				5171CBF725F57D1D00E090CD /* Macros.swift in Sources */,
 				5171CBD125F5789900E090CD /* BaseView.swift in Sources */,
 				5171CC0225F57F3600E090CD /* CollectionViewCell.swift in Sources */,
@@ -385,6 +396,7 @@
 				185E5CD725F6165000D0A9AC /* RefreshView.swift in Sources */,
 				5171CBF625F57D1D00E090CD /* Colors.swift in Sources */,
 				5171CBFE25F57E5A00E090CD /* CollectionViewModel.swift in Sources */,
+				5171CC3025F65BF200E090CD /* APIQuery+Ext.swift in Sources */,
 				5171CC1125F58D7500E090CD /* Assetable.swift in Sources */,
 				5171CBB625F5753500E090CD /* CollectionViewController.swift in Sources */,
 				185E5CC325F5DF7F00D0A9AC /* ColletionData.swift in Sources */,
