@@ -10,5 +10,6 @@ import RxSwift
 
 class BaseViewController: UIViewController {
     
-    let disposeBag = DisposeBag()
+    var disposeBag = DisposeBag()
+    
 }

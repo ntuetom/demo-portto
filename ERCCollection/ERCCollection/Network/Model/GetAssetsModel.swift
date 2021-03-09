@@ -24,5 +24,13 @@ class GetAssetsResponse: Decodable {
 class ERCAssset: Decodable {
     let name: String?
     let image_url: String?
+    let image_preview_url: String?
+    let description: String?
+    let permalink: String
+    let collection: AssetCollection
     let id: Int
+}
+
+class AssetCollection: Decodable {
+    let name: String
 }

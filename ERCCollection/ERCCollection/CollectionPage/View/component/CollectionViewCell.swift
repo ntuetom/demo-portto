@@ -17,6 +17,7 @@ class CollectionViewCell: UICollectionViewCell {
     lazy var nameLabel: UILabel = {
         let lb = UILabel()
         lb.textAlignment = .center
+        lb.textColor = .gray
         lb.numberOfLines = 0
         return lb
     }()
@@ -33,10 +34,7 @@ class CollectionViewCell: UICollectionViewCell {
     
     func setup(data: CollectionData) {
         nameLabel.text = data.name
-        imageView.kf.setImage(with: data.img_url)
-        if let url = data.img_url {
-            print(url.absoluteURL)
-        }
+        imageView.kf.setImage(with: data.image_preview_url)
     }
     
     func setupView() {

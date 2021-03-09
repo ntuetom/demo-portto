@@ -10,13 +10,17 @@
 		185E5CC325F5DF7F00D0A9AC /* ColletionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E5CC225F5DF7F00D0A9AC /* ColletionData.swift */; };
 		185E5CC625F5FFE100D0A9AC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E5CC525F5FFE100D0A9AC /* BaseViewController.swift */; };
 		185E5CD725F6165000D0A9AC /* RefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E5CD625F6165000D0A9AC /* RefreshView.swift */; };
+		185E5CDF25F7095100D0A9AC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E5CDE25F7095100D0A9AC /* DetailViewController.swift */; };
+		185E5CE325F70A1C00D0A9AC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E5CE225F70A1C00D0A9AC /* DetailView.swift */; };
+		185E5CE625F70A2600D0A9AC /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E5CE525F70A2600D0A9AC /* DetailViewModel.swift */; };
+		185E5CEB25F7212E00D0A9AC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E5CEA25F7212E00D0A9AC /* TableViewCell.swift */; };
+		185E5CEF25F72D8E00D0A9AC /* TableViewCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E5CEE25F72D8E00D0A9AC /* TableViewCellData.swift */; };
 		5171CBB225F5753500E090CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CBB125F5753500E090CD /* AppDelegate.swift */; };
 		5171CBB625F5753500E090CD /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CBB525F5753500E090CD /* CollectionViewController.swift */; };
 		5171CBBB25F5753800E090CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5171CBBA25F5753800E090CD /* Assets.xcassets */; };
 		5171CBBE25F5753800E090CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5171CBBC25F5753800E090CD /* LaunchScreen.storyboard */; };
 		5171CBD125F5789900E090CD /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CBD025F5789900E090CD /* BaseView.swift */; };
 		5171CBF125F57C5300E090CD /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CBF025F57C5300E090CD /* Network.swift */; };
-		5171CBF625F57D1D00E090CD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CBF425F57D1D00E090CD /* Colors.swift */; };
 		5171CBF725F57D1D00E090CD /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CBF525F57D1D00E090CD /* Macros.swift */; };
 		5171CBFB25F57E4400E090CD /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CBFA25F57E4400E090CD /* CollectionView.swift */; };
 		5171CBFE25F57E5A00E090CD /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171CBFD25F57E5A00E090CD /* CollectionViewModel.swift */; };
@@ -33,6 +37,11 @@
 		185E5CC225F5DF7F00D0A9AC /* ColletionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColletionData.swift; sourceTree = "<group>"; };
 		185E5CC525F5FFE100D0A9AC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		185E5CD625F6165000D0A9AC /* RefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshView.swift; sourceTree = "<group>"; };
+		185E5CDE25F7095100D0A9AC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		185E5CE225F70A1C00D0A9AC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		185E5CE525F70A2600D0A9AC /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		185E5CEA25F7212E00D0A9AC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		185E5CEE25F72D8E00D0A9AC /* TableViewCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellData.swift; sourceTree = "<group>"; };
 		5171CBAE25F5753500E090CD /* ERCCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ERCCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5171CBB125F5753500E090CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5171CBB525F5753500E090CD /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -41,7 +50,6 @@
 		5171CBBF25F5753800E090CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5171CBD025F5789900E090CD /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		5171CBF025F57C5300E090CD /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		5171CBF425F57D1D00E090CD /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		5171CBF525F57D1D00E090CD /* Macros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
 		5171CBFA25F57E4400E090CD /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		5171CBFD25F57E5A00E090CD /* CollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
@@ -71,6 +79,7 @@
 		185E5CBB25F5B78F00D0A9AC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				185E5CE525F70A2600D0A9AC /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -78,6 +87,8 @@
 		185E5CBC25F5B79800D0A9AC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				185E5CE925F7210E00D0A9AC /* component */,
+				185E5CE225F70A1C00D0A9AC /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -85,6 +96,7 @@
 		185E5CBD25F5B7D100D0A9AC /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				185E5CDE25F7095100D0A9AC /* DetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -103,6 +115,22 @@
 				185E5CD625F6165000D0A9AC /* RefreshView.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		185E5CE925F7210E00D0A9AC /* component */ = {
+			isa = PBXGroup;
+			children = (
+				185E5CEA25F7212E00D0A9AC /* TableViewCell.swift */,
+			);
+			path = component;
+			sourceTree = "<group>";
+		};
+		185E5CED25F72D7500D0A9AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				185E5CEE25F72D8E00D0A9AC /* TableViewCellData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		5171CBA525F5753400E090CD = {
@@ -155,6 +183,7 @@
 		5171CBC925F5775A00E090CD /* DetailPage */ = {
 			isa = PBXGroup;
 			children = (
+				185E5CED25F72D7500D0A9AC /* Model */,
 				185E5CBD25F5B7D100D0A9AC /* ViewController */,
 				185E5CBC25F5B79800D0A9AC /* View */,
 				185E5CBB25F5B78F00D0A9AC /* ViewModel */,
@@ -226,7 +255,6 @@
 		5171CBF325F57D1D00E090CD /* Definition */ = {
 			isa = PBXGroup;
 			children = (
-				5171CBF425F57D1D00E090CD /* Colors.swift */,
 				5171CBF525F57D1D00E090CD /* Macros.swift */,
 			);
 			path = Definition;
@@ -388,20 +416,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				5171CC0E25F586DD00E090CD /* GetAssetsModel.swift in Sources */,
+				185E5CEF25F72D8E00D0A9AC /* TableViewCellData.swift in Sources */,
 				5171CBF725F57D1D00E090CD /* Macros.swift in Sources */,
 				5171CBD125F5789900E090CD /* BaseView.swift in Sources */,
+				185E5CE625F70A2600D0A9AC /* DetailViewModel.swift in Sources */,
 				5171CC0225F57F3600E090CD /* CollectionViewCell.swift in Sources */,
 				5171CBFB25F57E4400E090CD /* CollectionView.swift in Sources */,
 				185E5CC625F5FFE100D0A9AC /* BaseViewController.swift in Sources */,
 				185E5CD725F6165000D0A9AC /* RefreshView.swift in Sources */,
-				5171CBF625F57D1D00E090CD /* Colors.swift in Sources */,
 				5171CBFE25F57E5A00E090CD /* CollectionViewModel.swift in Sources */,
+				185E5CDF25F7095100D0A9AC /* DetailViewController.swift in Sources */,
 				5171CC3025F65BF200E090CD /* APIQuery+Ext.swift in Sources */,
+				185E5CEB25F7212E00D0A9AC /* TableViewCell.swift in Sources */,
 				5171CC1125F58D7500E090CD /* Assetable.swift in Sources */,
 				5171CBB625F5753500E090CD /* CollectionViewController.swift in Sources */,
 				185E5CC325F5DF7F00D0A9AC /* ColletionData.swift in Sources */,
 				5171CC0825F5819200E090CD /* ERCAPI.swift in Sources */,
 				5171CC0B25F5820900E090CD /* ERCAPI+Parameter.swift in Sources */,
+				185E5CE325F70A1C00D0A9AC /* DetailView.swift in Sources */,
 				5171CBF125F57C5300E090CD /* Network.swift in Sources */,
 				5171CBB225F5753500E090CD /* AppDelegate.swift in Sources */,
 			);

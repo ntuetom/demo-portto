@@ -24,13 +24,25 @@ class CollectionViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
         binding()
         viewModel.fetchAsset()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
     func binding() {
         collectionView.rx.setDelegate(self).disposed(by: disposeBag)
+        
+        Observable.zip(collectionView.rx.itemSelected,
+                       collectionView.rx.modelSelected(CollectionData.self))
+                    .bind{ [unowned self] indexPath, model in
+                        let detailVC = DetailViewControlller(data: model)
+                        navigationController?.pushViewController(detailVC, animated: true)
+                    }
+                    .disposed(by: disposeBag)
         
         viewModel.cellSource.subscribe { [weak self] _ in
             self?.collectionView.mj_footer?.endRefreshing()

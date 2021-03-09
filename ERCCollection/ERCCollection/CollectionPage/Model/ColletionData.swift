@@ -10,11 +10,15 @@ import RxDataSources
 struct CollectionData: IdentifiableType, Equatable {
     
     let id: Int
-    let name: String?
+    let name: String
     let img_url: URL?
-    
+    let image_preview_url: URL?
+    let description: String
+    let collectionName: String
+    let webURL: URL?
     
     typealias Identity = Int
+    
     var identity: Identity {
         return id
     }
