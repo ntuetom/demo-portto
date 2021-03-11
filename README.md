@@ -19,8 +19,8 @@
 - 'Kingfisher'
 
 ### ScreenShot:
-![This is scene 1](https://drive.google.com/file/d/1KclLRxUtGlxWE0gSCx2R-8buHDvg0sco/view?usp=sharing "第一頁")
-![This is scene 2](https://drive.google.com/file/d/1vHnORTlBXwNateVUEsbe5EhlygPGeDKR/view?usp=sharing "第二頁")
+![This is scene 1](https://drive.google.com/uc?export=view&id=1KclLRxUtGlxWE0gSCx2R-8buHDvg0sco "第一頁")
+![This is scene 2](https://drive.google.com/uc?export=view&id=1vHnORTlBXwNateVUEsbe5EhlygPGeDKR "第二頁")
 
 ### Test on: 
 - iphone11 14.4  
