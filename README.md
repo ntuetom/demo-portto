@@ -19,8 +19,15 @@
 - 'Kingfisher'
 
 ### ScreenShot:
-![This is scene 1](https://drive.google.com/uc?export=view&id=1KclLRxUtGlxWE0gSCx2R-8buHDvg0sco "第一頁")
-![This is scene 2](https://drive.google.com/uc?export=view&id=1vHnORTlBXwNateVUEsbe5EhlygPGeDKR "第二頁")
+> 圖為創作品列表
+<p align="left">
+<img src=https://drive.google.com/uc?export=view&id=1KclLRxUtGlxWE0gSCx2R-8buHDvg0sco title="list" width="450px" height="975px">
+</p>
+
+> 圖為詳細內容
+<p align="left">
+<img src=https://drive.google.com/uc?export=view&id=1vHnORTlBXwNateVUEsbe5EhlygPGeDKR title="detail" width="450px" height="975px">
+</p>
 
 ### Test on: 
 - iphone11 14.4  
